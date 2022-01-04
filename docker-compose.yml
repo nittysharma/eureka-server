@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  eureka-server:
+    image: gaccount4m/eureka-server
+    mem_limit: 300m
+    ports:
+     - "8761:8761"
+
+  cloud-config:
+    image: gaccount4m/cloud-config
+    mem_limit: 300m
+    ports:
+      - "8888:8888"
